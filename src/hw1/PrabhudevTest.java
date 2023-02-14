@@ -1,6 +1,13 @@
 package hw1;
 
-public static void main(String[] args){
-        Student Shreyas = new Student("Shreyas", "I am a second year CS major attending SJSU.", 015466750, COMPUTER_SCIENCE, new Date(2003, 3, 13));
-        System.out.println(Shreyas);
+import java.util.Date;
+
+public class PrabhudevTest{
+        public static void main(String[] args){
+                long time = 1047564000000L;
+                Date dob = new Date(time);
+                Student Shreyas = new Student("Shreyas", "I am a second year CS major attending SJSU.", 6750, Branch.COMPUTER_SCIENCE, dob);
+                System.out.println(Shreyas);
+        }
 }
+
